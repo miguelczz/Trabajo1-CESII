@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 2</title>
+</head>
+<body>
+<h2>Estadísticas de pedidos por cada cliente</h2>
+
+<ul>
+    <li><strong>Total de clientes:</strong> <span th:text="${conteo}"></span></li>
+    <li><strong>Suma total de pedidos:</strong> <span th:text="${sumatotal}"></span></li>
+    <li><strong>Promedio de pedidos por cliente:</strong> <span th:text="${promedio}"></span></li>
+    <li><strong>Mínimo de pedidos de un cliente:</strong> <span th:text="${min}"></span></li>
+    <li><strong>Máximo de pedidos de un cliente:</strong> <span th:text="${max}"></span></li>
+</ul>
+</body>
+</html>

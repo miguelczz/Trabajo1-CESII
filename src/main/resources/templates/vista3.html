@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Petición 3</title>
+</head>
+<body>
+<h2>Lista de todos los pedidos</h2>
+<ul>
+  <li th:each="pedido : ${pedidos}">
+    <span th:text="${pedido.titulo}"></span> -
+    <span th:text="${pedido.valor}"></span>
+  </li>
+</ul>
+
+<h2>Lista de titulos de pedidos</h2>
+<ul>
+  <li th:each="titulo : ${titulos}" th:text="${titulo}"></li>
+</ul>
+</body>
+</html>

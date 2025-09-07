@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Petición 4</title>
+</head>
+<body>
+<h2>Consultas sobre pedidos de clientes</h2>
+
+<ul>
+    <li>
+        Hay clientes sin pedidos?
+        <span th:text="${sinpedidos}"></span>
+    </li>
+    <li>
+        Hay clientes con más de un pedido?
+        <span th:text="${masdeuno}"></span>
+    </li>
+    <li>
+        Ningun cliente tiene más de tres pedidos?
+        <span th:text="${ningunoconmasdetres}"></span>
+    </li>
+</ul>
+</body>
+</html>
